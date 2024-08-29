@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    justify-content: center;
+    .form{
+        display: flex;
+        background-color: #fff;
+        margin-top: 2%;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 150%;
+    }
+}
+
+@media (max-width: 600px){
+    main{
+        .form{
+            width: 100%;
+        }
+    }
+}
