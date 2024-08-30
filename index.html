@@ -10,18 +10,60 @@
 <body>
     <div class="grid-container">
         <nav>
-            <img class="logo-img" src="Images/logo_2.png" alt="logo provisorio" style="height: 75px;">
+            <a href="#"><img class="logo-img" src="Images/logo_2.png" alt="logo provisorio"></a>
             <div class="opciones">
-                <h3>opcion 1</h3>
-                <h3>opcion 2</h3>
+                <a class="btn" href="formulario.html">Reserva</a>
+                <a class="btn" href="vista1.html">Paquetes</a>
             </div>
         </nav>
         <main>
-            <div class="form">
-                <h1>hola</h1>
-            </div>
+            <!-- Recomendaciones de Vuelos -->
+            <section class="recomendaciones-vuelos">
+                <h2>Recomendaciones de Vuelos</h2>
+                <div class="vuelos">
+                    <div class="vuelo">
+                        <h3>Vuelo a Nueva York</h3>
+                        <p>Desde $300.000</p>
+                        <a href="nuevayol.html"><button>Ver Detalles</button></a>
+                    </div>
+                    <div class="vuelo">
+                        <h3>Vuelo a París</h3>
+                        <p>Desde $500.000</p>
+                        <a href="paris.html"><button>Ver Detalles</button></a>
+                    </div>
+                    <div class="vuelo">
+                        <h3>Vuelo a Tokio</h3>
+                        <p>Desde $700.000</p>
+                        <a href="tokio.html"><button>Ver Detalles</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Destinos Populares -->
+            <section class="destinos-populares">
+                <h2>Destinos Populares</h2>
+                <div class="destinos">
+                    <div class="destino">
+                        <h3>Cancún</h3>
+                        <img src="Images/destino1.jpeg" alt="Playa de Cancún">
+                        <button>Ver Detalles</button>
+                    </div>
+                    <div class="destino">
+                        <h3>Suiza</h3>
+                        <img src="Images/destino2.webp" alt="Montañas de Suiza">
+                        <button>Ver Detalles</button>
+                    </div>
+                    <div class="destino">
+                        <h3>Venecia</h3>
+                        <img src="Images/destino3.jpg" alt="Calles de Venecia">
+                        <button>Ver Detalles</button>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+        </footer>
     </div>
 </body>
 </html>

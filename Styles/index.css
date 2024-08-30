@@ -1,21 +1,64 @@
-main{
+main {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recomendaciones-vuelos, .destinos-populares {
+    background-color: #c8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vuelos, .destinos {
+    display: flex;
+    gap: 15px;
     justify-content: center;
-    .form{
-        display: flex;
-        background-color: #fff;
-        margin-top: 2%;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: 150%;
-    }
+}
+
+.vuelo, .destino {
+    background-color: #8ee4e6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vuelo h3, .destino h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.vuelo button, .destino button {
+    background-color: #070ac5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vuelo button:hover, .destino button:hover {
+    background-color: #3538df;
+}
+
+.destino img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 600px){
     main{
-        .form{
-            width: 100%;
-        }
     }
 }
