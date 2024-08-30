@@ -40,7 +40,7 @@ main {
     }
     
     .submit-btn {
-        background-color: #4CAF50;
+        background-color: #070ac5;
         color: white;
         border: none;
         cursor: pointer;
@@ -48,7 +48,7 @@ main {
     }
     
     .submit-btn:hover {
-        background-color: #45a049;
+        background-color: #3538df;
     }
 }
 

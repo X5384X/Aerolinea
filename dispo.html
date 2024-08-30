@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/dispo.css">
+    <link rel="stylesheet" href="Styles/global.css">
+    <title>Reserva</title>
+</head>
+<body>
+    <div class="grid-container">
+        <nav>
+            <a href="index.html"><img class="logo-img" src="Images/logo_2.png" alt="logo provisorio"></a>
+            <div class="opciones">
+                <a class="btn" href="formulario.html">Reserva</a>
+                <a class="btn" href="vista1.html">Paquetes</a>
+            </div>
+        </nav>
+        <main>
+            <section class="resumen">
+                <h2>Confirmación de Reserva</h2>
+                <p><strong>Origen:</strong> <span id="origen"></span></p>
+                <p><strong>Destino:</strong> <span id="destino"></span></p>
+                <p><strong>Fecha de Salida:</strong> <span id="fechaSalida"></span></p>
+                <p><strong>Fecha de Regreso:</strong> <span id="fechaRegreso"></span></p>
+                <p><strong>Número de Pasajeros:</strong> <span id="numPasajeros"></span></p>
+                <p><strong>Clase:</strong> <span id="clase"></span></p>
+                <p><strong>Equipaje Adicional:</strong> <span id="equipaje"></span></p>
+                <button type="button" class="confirmar">Confirmar</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Obtener parámetros de la URL
+        const params = new URLSearchParams(window.location.search);
+        
+        document.getElementById('origen').textContent = params.get('origen');
+        document.getElementById('destino').textContent = params.get('destino');
+        document.getElementById('fechaSalida').textContent = params.get('fecha-salida');
+        document.getElementById('fechaRegreso').textContent = params.get('fecha-regreso');
+        document.getElementById('numPasajeros').textContent = params.get('pasajeros');
+        document.getElementById('clase').textContent = params.get('clase');
+        document.getElementById('equipaje').textContent = params.get('equipaje') ? 'Sí' : 'No';
+    </script>
+</body>
+</html>
