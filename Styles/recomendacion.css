@@ -2,7 +2,7 @@ main {
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    column-gap: 30px;
 }
 
 .detalle-vuelo {
