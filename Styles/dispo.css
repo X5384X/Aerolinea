@@ -28,3 +28,9 @@ main{
 .confirmar:hover{
     background-color: #3538df;
 }
+
+@media (max-width: 600px){
+    .resumen{
+        width: 100%;
+    }
+}

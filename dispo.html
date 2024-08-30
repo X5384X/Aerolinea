@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/dispo.css">
     <link rel="stylesheet" href="Styles/global.css">
-    <title>Reserva</title>
+    <title>Confirmar reserva</title>
 </head>
 <body>
+    <script>
+        function confirmarReserva() {
+            alert("¡Reserva confirmada! Gracias por elegir nuestra agencia.");
+        }
+    </script>
     <div class="grid-container">
         <nav>
-            <a href="index.html"><img class="logo-img" src="Images/logo_2.png" alt="logo provisorio"></a>
+            <a href="index.html"><img class="logo-img" src="Images/logo_2.jpg" alt="logo provisorio"></a>
             <div class="opciones">
                 <a class="btn" href="formulario.html">Reserva</a>
                 <a class="btn" href="vista1.html">Paquetes</a>
             </div>
         </nav>
         <main>
-            <section class="resumen">
+            <form class="resumen" action="index.html" onsubmit="confirmarReserva()">
                 <h2>Confirmación de Reserva</h2>
                 <p><strong>Origen:</strong> <span id="origen"></span></p>
                 <p><strong>Destino:</strong> <span id="destino"></span></p>
@@ -26,8 +31,8 @@
                 <p><strong>Número de Pasajeros:</strong> <span id="numPasajeros"></span></p>
                 <p><strong>Clase:</strong> <span id="clase"></span></p>
                 <p><strong>Equipaje Adicional:</strong> <span id="equipaje"></span></p>
-                <button type="button" class="confirmar">Confirmar</button>
-            </section>
+                <button type="submit" class="confirmar">Confirmar</button>
+            </form>
         </main>
         <footer>
             <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
